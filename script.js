@@ -46,7 +46,7 @@ function getURLQuery(url, param) {
 }
 
 function authorizeSpotify() {
-  var authURL = "https://accounts.spotify.com/authorize?client_id=a8c0f49a02a74e47957184e62d991d0d&response_type=token&scope=playlist-modify-private user-top-read";
+  var authURL = "https://accounts.spotify.com/authorize?client_id=a8c0f49a02a74e47957184e62d991d0d&response_type=token&scope=playlist-modify-private";
   var authRedirect = "&redirect_uri=" + encodeURIComponent("http://localhost:5500/"); 
   window.location.href = authURL + authRedirect;
 }
